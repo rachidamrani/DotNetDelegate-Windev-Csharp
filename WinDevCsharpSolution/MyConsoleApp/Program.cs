@@ -8,7 +8,6 @@ notifier.SomethingHappened += OnMessageSentHandler;
 notifier.Fire("This is the message I want to send !");
 
 
-
 void OnMessageSentHandler(object sender, MyEventArgs e)
 {
     Console.WriteLine(e.Message);
