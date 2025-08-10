@@ -2,7 +2,7 @@
 {
     public class Notifier
     {
-        public event MessageSentEvent SomethingHappened;
-        public void Fire(string msg) => SomethingHappened?.Invoke(this, new MyEventArgs(msg));
+        public event MessageSentEvent MessageSent;
+        public void Fire(string msg) => MessageSent?.Invoke(this, new MyEventArgs(msg));
     }
 }

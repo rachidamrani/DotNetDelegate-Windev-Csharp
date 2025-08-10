@@ -2,7 +2,7 @@
 
 var notifier = new Notifier();
 
-notifier.SomethingHappened += OnMessageSentHandler;
+notifier.MessageSent += OnMessageSentHandler;
 
 // Perform action
 notifier.Fire("This is the message I want to send !");
